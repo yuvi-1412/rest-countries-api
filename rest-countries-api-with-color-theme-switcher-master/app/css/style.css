@@ -1,0 +1,169 @@
+body {
+  background: #fafafa;
+  color: #111517;
+  font-family: "Nunito Sans", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body button {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body header {
+  background: white;
+}
+
+body header .header__theme::before {
+  content: url(../../src/icons/theme-light.svg);
+  display: block;
+  width: 12px;
+  margin-right: 8px;
+}
+
+body main .main__form .form__search {
+  background: white;
+}
+
+body main .main__form .form__search::before {
+  content: url(../../src/icons/search-light.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+body main .main__form .form__search .search__input::-webkit-input-placeholder {
+  color: #111517;
+}
+
+body main .main__form .form__search .search__input:-ms-input-placeholder {
+  color: #111517;
+}
+
+body main .main__form .form__search .search__input::-ms-input-placeholder {
+  color: #111517;
+}
+
+body main .main__form .form__search .search__input::placeholder {
+  color: #111517;
+}
+
+body main .main__form .form__filter {
+  background: white;
+}
+
+body main .main__form .form__filter .filter__select {
+  background: white;
+}
+
+body main .main__form .form__filter::after {
+  content: url(../../src/icons/arrow-light.svg);
+  width: 10px;
+  display: block;
+}
+
+body main .main__countries .countries__country {
+  background: white;
+}
+
+body main .main__countries .countries__country .country__flag {
+  height: 150px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .main__fail {
+  background: white;
+}
+
+body main .main__back {
+  background: white;
+}
+
+body main .main__back::before {
+  content: url(../../src/icons/back-light.svg);
+  width: 8px;
+}
+
+body main .main__details .details__border .border__country {
+  background: white;
+}
+
+body.dark-mode {
+  background: #202c37;
+  color: white;
+}
+
+body.dark-mode header {
+  background: #2b3945;
+}
+
+body.dark-mode header .header__theme::before {
+  content: url(../../src/icons/theme-dark.svg);
+}
+
+body.dark-mode main .main__form .form__search {
+  background: #2b3945;
+}
+
+body.dark-mode main .main__form .form__search::before {
+  content: url(../../src/icons/search-dark.svg);
+}
+
+body.dark-mode main .main__form .form__search .search__input::-webkit-input-placeholder {
+  color: white;
+}
+
+body.dark-mode main .main__form .form__search .search__input:-ms-input-placeholder {
+  color: white;
+}
+
+body.dark-mode main .main__form .form__search .search__input::-ms-input-placeholder {
+  color: white;
+}
+
+body.dark-mode main .main__form .form__search .search__input::placeholder {
+  color: white;
+}
+
+body.dark-mode main .main__form .form__filter {
+  background: #2b3945;
+}
+
+body.dark-mode main .main__form .form__filter .filter__select {
+  background: #2b3945;
+}
+
+body.dark-mode main .main__form .form__filter::after {
+  content: url(../../src/icons/arrow-dark.svg);
+}
+
+body.dark-mode main .main__countries .countries__country {
+  background: #2b3945;
+}
+
+body.dark-mode main .main__countries .countries__more {
+  background: #2b3945;
+}
+
+body.dark-mode main .main__fail {
+  background: #2b3945;
+}
+
+body.dark-mode main .main__back {
+  background: #2b3945;
+}
+
+body.dark-mode main .main__back::before {
+  content: url(../../src/icons/back-dark.svg);
+}
+
+body.dark-mode main .main__details .details__border .border__country {
+  background: #2b3945;
+}
+/*# sourceMappingURL=style.css.map */

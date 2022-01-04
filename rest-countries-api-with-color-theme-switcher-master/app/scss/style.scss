@@ -1,0 +1,138 @@
+@import "_variables";
+
+body {
+    background: $-c-light-bg;
+    color: $-c-light-text;
+    font-family: $-f-nunito;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    button {
+        font-family: $-f-nunito;
+    }
+    header {
+        background: $-c-light-element;
+        .header__theme {
+            &::before {
+                content: url(../../src/icons/theme-light.svg);
+                display: block;
+                width: 12px;
+                margin-right: 8px;
+            }
+        }
+    }
+    main {
+        .main__form {
+            .form__search {
+                background: $-c-light-element;
+                &::before {
+                    content: url(../../src/icons/search-light.svg);
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                }
+                .search__input::placeholder {
+                    color: $-c-light-text;
+                }
+            }
+            .form__filter {
+                background: $-c-light-element;
+                .filter__select {
+                    background: $-c-light-element;
+                }
+                &::after {
+                    content: url(../../src/icons/arrow-light.svg);
+                    width: 10px;
+                    display: block;
+                }
+            }
+        }
+        .main__countries {
+            .countries__country {
+                background: $-c-light-element;
+                .country__flag {
+                    height: 150px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .main__fail {
+            background: $-c-light-element;
+        }
+        .main__back {
+            background: $-c-light-element;
+            &::before {
+                content: url(../../src/icons/back-light.svg);
+                width: 8px;
+            }
+        }
+        .main__details {
+            .details__border {
+                .border__country {
+                    background: $-c-light-element;
+                }
+            }
+        }
+    }
+    &.dark-mode {
+        background: $-c-dark-bg;
+        color: $-c-dark-text;
+        header {
+            background: $-c-dark-element;
+            .header__theme {
+                &::before {
+                    content: url(../../src/icons/theme-dark.svg);
+                }
+            }
+        }
+        main {
+            .main__form {
+                .form__search {
+                    background: $-c-dark-element;
+                    &::before {
+                        content: url(../../src/icons/search-dark.svg);
+                    }
+                    .search__input::placeholder {
+                        color: $-c-dark-text;
+                    }
+                }
+                .form__filter {
+                    background: $-c-dark-element;
+                    .filter__select {
+                        background: $-c-dark-element;
+                    }
+                    &::after {
+                        content: url(../../src/icons/arrow-dark.svg);
+                    }
+                }
+            }
+            .main__countries {
+                .countries__country {
+                    background: $-c-dark-element;
+                }
+                .countries__more {
+                    background: $-c-dark-element;
+                }
+            }
+            .main__fail {
+                background: $-c-dark-element;
+            }
+            .main__back {
+                background: $-c-dark-element;
+                &::before {
+                    content: url(../../src/icons/back-dark.svg);
+                }
+            }
+            .main__details {
+                .details__border {
+                    .border__country {
+                        background: $-c-dark-element;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where in the world?</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./app/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-mode">
+    <header class="flex justify-between items-center py-7 px-4 shadow-md lg:py-6 lg:px-16">
+        <a href="." class="font-extrabold text-sm md:text-2xl">Where in the world?</a>
+        <button class="header__theme flex text-xs font-semibold items-center lg:text-base">Dark Mode</button>
+    </header>
+    <main class="py-6 px-4 lg:px-16 lg:py-12">
+        <h1 class="hidden">Where in the world?</h1>
+        <div class="main__form flex flex-col gap-9 lg:flex-row lg:justify-between lg:gap-0">
+            <form class="form__search shadow-md rounded-md px-8 py-4 text-xs flex gap-6 lg:w-1/3 lg:text-sm">
+                <input type="text" name="q" id="search" placeholder="Search for a country..."
+                    class="search__input bg-transparent outline-none w-full">
+            </form>
+            <form
+                class="form__filter shadow-md rounded-md px-6 py-4 text-xs w-48 flex justify-between items-center relative cursor-pointer text-xs lg:text-sm">
+                <span class="filter__heading">Filter by Region</span>
+                <div name="sort" id="filter"
+                    class="filter__select outline-none absolute w-48 left-0 top-14 px-6 py-4 shadow-md rounded-md flex flex-col gap-2 items-start">
+                    <button class="select__region" value="africa">Africa</button>
+                    <button class="select__region" value="americas">America</button>
+                    <button class="select__region" value="asia">Asia</button>
+                    <button class="select__region" value="europe">Europe</button>
+                    <button class="select__region" value="oceania">Oceania</button>
+                </div>
+            </form>
+        </div>
+        <div
+            class="main__countries px-8 py-12 flex flex-col gap-10 md:grid lg:gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-16 lg:px-0 2xl:grid-cols-5">
+        </div>
+    </main>
+    <footer class="flex flex-col items-center text-sm pb-6">
+        <span>
+            Challenge by
+            <a href="https://www.frontendmentor.io" target="_blank" class="font-semibold">Frontend Mentor</a>
+        </span>
+        <span>
+            Icons provided by
+            <a href="https://fontawesome.com/license" target="_blank" class="font-semibold">Font Awesome</a>
+        </span>
+        <span>
+            Coded by
+            <a href="https://github.com/waldosmuts" target="_blank" class="font-semibold">Yuvraj Singh Shaktawat</a>
+        </span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./app/js/script.js"></script>
+</body>
+
+</html>
